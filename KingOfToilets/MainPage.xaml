@@ -40,7 +40,7 @@
             <!--Use 'Orientation="Horizontal"' to enable a panel that lays out horizontally-->
             <controls:PanoramaItem Header="second item">
                 <!--Double line list with image placeholder and text wrapping-->
-                <ListBox Margin="0,0,-12,0" ItemsSource="{Binding Items}">
+                <ListBox Margin="0,0,-12,0">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal" Margin="0,0,0,17">
@@ -57,9 +57,7 @@
     </Grid>
   <phone:PhoneApplicationPage.ApplicationBar>
     <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-      <shell:ApplicationBar.MenuItems>
-        <shell:ApplicationBarMenuItem Text="Check in" x:Name="chkIn" Click="chkIn_Click"/>        
-      </shell:ApplicationBar.MenuItems>
+      <shell:ApplicationBarIconButton IconUri="/Images/checkin.png" Text="Check in" x:Name="chkIn" Click="chkIn_Click"/>
     </shell:ApplicationBar>
   </phone:PhoneApplicationPage.ApplicationBar>
 </phone:PhoneApplicationPage>
